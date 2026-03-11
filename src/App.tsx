@@ -2,14 +2,14 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { MapPin, Clock, Phone, Facebook, Instagram, ChevronRight, X, Utensils, Users, Info } from 'lucide-react';
 
-// Import images
-import heroImg from './assets/images/hero.jpg';
-import restaurant2Img from './assets/images/restaurant2.jpg';
-import teamImg from './assets/images/team.jpg';
-import phoImg from './assets/images/pho.jpg';
-import bobunImg from './assets/images/bobun.jpg';
-import loclacImg from './assets/images/loclac.jpg';
-import banhcuonImg from './assets/images/banhcuon.jpg';
+// Image links from Google Drive
+const heroImg = "https://lh3.googleusercontent.com/d/1BtxYH1SsJJGx5jBAVeQ4STmGmOfOIggT";
+const restaurant2Img = "https://lh3.googleusercontent.com/d/1JPZjOnHm676Ue79OqO-6htHB4xNhnVHv";
+const teamImg = "https://lh3.googleusercontent.com/d/1qk8trTYn8RbitMtj_8oz0xSSvp-6L13Q";
+const phoImg = "https://lh3.googleusercontent.com/d/1hnpkwDXG93HaIQx7m4KWoQyXdgYSwFxm";
+const bobunImg = "https://lh3.googleusercontent.com/d/18PVt_pn1QBTSP2THIzacv258lTBP3nYn";
+const loclacImg = "https://lh3.googleusercontent.com/d/1ZrnFCSQUY4hquMmn3zHyF4EWEuZczBtT";
+const banhcuonImg = "https://lh3.googleusercontent.com/d/1EA1NTWd-6LAoVUHm1Y_IINEhHJbA4k9-";
 
 // --- Data ---
 const RESTAURANT_INFO = {
@@ -140,7 +140,7 @@ export default function App() {
       <nav className={`fixed top-0 w-full z-40 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-5'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
           <div className="flex items-center gap-2 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            <img src="/logo.png" alt="Pho Antony Logo" className="h-10 w-auto rounded-full object-cover" />
+            <img src="https://lh3.googleusercontent.com/d/1Frb-07yUjuOevp6HvNmmCQSiNRbmhDiG" alt="Pho Antony Logo" className="h-10 w-auto rounded-full object-cover" referrerPolicy="no-referrer" />
             <span className={`font-serif font-bold text-2xl tracking-tight ${isScrolled ? 'text-stone-900' : 'text-white drop-shadow-md'}`}>
               Pho Antony
             </span>
@@ -296,6 +296,7 @@ export default function App() {
                   src={IMAGES.team} 
                   alt="L'équipe de Pho Antony" 
                   className="w-full h-full object-cover object-top"
+                  referrerPolicy="no-referrer"
                 />
               </div>
               <div className="absolute -bottom-6 -right-6 bg-orange-500 text-white p-8 rounded-3xl shadow-xl hidden md:block">
@@ -414,7 +415,7 @@ export default function App() {
       <footer className="bg-stone-950 py-8 border-t border-stone-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex items-center gap-2">
-            <img src="/logo.png" alt="Pho Antony Logo" className="h-8 w-auto rounded-full object-cover" />
+            <img src="https://lh3.googleusercontent.com/d/1Frb-07yUjuOevp6HvNmmCQSiNRbmhDiG" alt="Pho Antony Logo" className="h-8 w-auto rounded-full object-cover" referrerPolicy="no-referrer" />
             <span className="font-serif font-bold text-xl text-white">
               Pho Antony
             </span>
