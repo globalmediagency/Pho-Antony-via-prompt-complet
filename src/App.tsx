@@ -2,6 +2,15 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { MapPin, Clock, Phone, Facebook, Instagram, ChevronRight, X, Utensils, Users, Info } from 'lucide-react';
 
+// Import images
+import heroImg from './assets/images/hero.jpg';
+import restaurant2Img from './assets/images/restaurant2.jpg';
+import teamImg from './assets/images/team.jpg';
+import phoImg from './assets/images/pho.jpg';
+import bobunImg from './assets/images/bobun.jpg';
+import loclacImg from './assets/images/loclac.jpg';
+import banhcuonImg from './assets/images/banhcuon.jpg';
+
 // --- Data ---
 const RESTAURANT_INFO = {
   name: 'Pho Antony',
@@ -22,14 +31,14 @@ const RESTAURANT_INFO = {
 };
 
 const IMAGES = {
-  hero: '/images/hero.jpg',
-  restaurant2: '/images/restaurant2.jpg',
-  team: '/images/team.jpg',
+  hero: heroImg,
+  restaurant2: restaurant2Img,
+  team: teamImg,
   dishes: {
-    pho: '/images/pho.jpg',
-    bobun: '/images/bobun.jpg',
-    loclac: '/images/loclac.jpg',
-    banhcuon: '/images/banhcuon.jpg'
+    pho: phoImg,
+    bobun: bobunImg,
+    loclac: loclacImg,
+    banhcuon: banhcuonImg
   }
 };
 
@@ -287,7 +296,6 @@ export default function App() {
                   src={IMAGES.team} 
                   alt="L'équipe de Pho Antony" 
                   className="w-full h-full object-cover object-top"
-                  referrerPolicy="no-referrer"
                 />
               </div>
               <div className="absolute -bottom-6 -right-6 bg-orange-500 text-white p-8 rounded-3xl shadow-xl hidden md:block">
