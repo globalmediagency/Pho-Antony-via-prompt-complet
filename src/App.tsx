@@ -3,13 +3,13 @@ import { motion, AnimatePresence } from 'motion/react';
 import { MapPin, Clock, Phone, Facebook, Instagram, ChevronRight, X, Utensils, Users, Info } from 'lucide-react';
 
 // Import images
-import heroImg from '@/assets/images/hero.jpg';
-import restaurant2Img from '@/assets/images/restaurant2.jpg';
-import teamImg from '@/assets/images/team.jpg';
-import phoImg from '@/assets/images/pho.jpg';
-import bobunImg from '@/assets/images/bobun.jpg';
-import loclacImg from '@/assets/images/loclac.jpg';
-import banhcuonImg from '@/assets/images/banhcuon.jpg';
+import heroImg from './assets/images/hero.jpg';
+import restaurant2Img from './assets/images/restaurant2.jpg';
+import teamImg from './assets/images/team.jpg';
+import phoImg from './assets/images/pho.jpg';
+import bobunImg from './assets/images/bobun.jpg';
+import loclacImg from './assets/images/loclac.jpg';
+import banhcuonImg from './assets/images/banhcuon.jpg';
 
 // --- Data ---
 const RESTAURANT_INFO = {
